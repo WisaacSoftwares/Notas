@@ -1,0 +1,79 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{orimo2006reviewing}{article}{}
+      \name{author}{6}{}{%
+        {{hash=7a0ae56d452c8bec56b0222796ef4d11}{%
+           family={Orimo},
+           familyi={O\bibinitperiod},
+           given={Hajime},
+           giveni={H\bibinitperiod}}}%
+        {{hash=18a80c2ae8017f550635749db0809ff2}{%
+           family={Ito},
+           familyi={I\bibinitperiod},
+           given={Hideki},
+           giveni={H\bibinitperiod}}}%
+        {{hash=215afd646c2d853f32ceea2ba270e3f1}{%
+           family={Suzuki},
+           familyi={S\bibinitperiod},
+           given={Takao},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4698917983fcb5009f778f25c8ade0c8}{%
+           family={Araki},
+           familyi={A\bibinitperiod},
+           given={Atsushi},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6a15acc0c093cf371077848da32f24cd}{%
+           family={Hosoi},
+           familyi={H\bibinitperiod},
+           given={Takayuki},
+           giveni={T\bibinitperiod}}}%
+        {{hash=06e7d3752ed363873423ca04b4f7e0be}{%
+           family={Sawabe},
+           familyi={S\bibinitperiod},
+           given={Motoji},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{b15e0e82e0680226693623bdbb5d0d9a}
+      \strng{fullhash}{9a5bbed2530752b57f5eda250ec1dfaa}
+      \strng{bibnamehash}{b15e0e82e0680226693623bdbb5d0d9a}
+      \strng{authorbibnamehash}{b15e0e82e0680226693623bdbb5d0d9a}
+      \strng{authornamehash}{b15e0e82e0680226693623bdbb5d0d9a}
+      \strng{authorfullhash}{9a5bbed2530752b57f5eda250ec1dfaa}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Geriatrics \& gerontology international}
+      \field{number}{3}
+      \field{title}{Reviewing the definition of “elderly”}
+      \field{volume}{6}
+      \field{year}{2006}
+      \field{pages}{149\bibrangedash 158}
+      \range{pages}{10}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

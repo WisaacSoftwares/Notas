@@ -17,13 +17,17 @@
 \usepackage{psfrag}
 \usepackage{pgfplots}
 \usepackage{bm}
+\usepackage[spanish]{babel}
+\usepackage{biblatex}
+\usepackage{csquotes}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Other Settings
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Page Setting %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \geometry{a4paper}
-
+\graphicspath{{img/}}
+\addbibresource{bibliography.bib}
 %%%%%%%%%%%%%%%%%%%%%%%%%% Define some useful colors %%%%%%%%%%%%%%%%%%%%%%%%%%
 \definecolor{ocre}{RGB}{243,102,25}
 \definecolor{mygray}{RGB}{243,243,244}
@@ -60,27 +64,9 @@
 
 \begin{document}
 
-    \maketitle
-
-    Hola Mundo
-    \newline
-    \lipsum[2]
-    \newline
-
-    $\mathbb{R}$
-    $x_1,x_2,\dots, x_n$
-    \begin{equation}
-        \begin{bmatrix}
-            \hat{i}&j&k\\
-            1&2&3\\
-            4&5&6\\
-        \end{bmatrix} = (Ax)+\frac{1}{2}
-    \end{equation}
-
-    \begin{itemize}
-        \item 1
-        \item 2
-        \item 3
-    \end{itemize}
+\maketitle
+Hola
+\input{lib/chapter1.tex}
+\printbibliography
 
 \end{document}
