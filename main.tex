@@ -17,17 +17,30 @@
 \usepackage{psfrag}
 \usepackage{pgfplots}
 \usepackage{bm}
+
+\usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \usepackage{biblatex}
 \usepackage{csquotes}
+\usepackage{multicol}
+% \usepackage{caption}
+\usepackage{nonfloat}
+% \captionsetup{
+%   font=small,
+%   labelfont=bf,
+%   tableposition=top
+% }
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Other Settings
+% \newfontfamily\cfont{Noto Sans CJK SC}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% Page Setting %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \geometry{a4paper}
 \graphicspath{{img/}}
 \addbibresource{bibliography.bib}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%% Define some useful colors %%%%%%%%%%%%%%%%%%%%%%%%%%
 \definecolor{ocre}{RGB}{243,102,25}
 \definecolor{mygray}{RGB}{243,243,244}
@@ -50,11 +63,24 @@
 \newmdtheoremenv[linewidth=1pt,backgroundcolor=shallowBlue,linecolor=deepBlue,leftmargin=0pt,innerleftmargin=20pt,innerrightmargin=20pt,]{definition}{Definition}[section]
 \theoremstyle{myproblemstyle}
 \newmdtheoremenv[linecolor=black,leftmargin=0pt,innerleftmargin=10pt,innerrightmargin=10pt,]{problem}{Problem}[section]
+% \newenvironment{Figure}{\par\medskip\noindent\minipage{\linewidth}}{\endminipage\par\medskip}
+
+\newcommand\myfigure[1]{%
+\vfill\medskip\noindent\begin{minipage}{\columnwidth}
+\centering%
+#1%
+%figure,caption, and label go here
+\end{minipage}\medskip}
+\newcommand\mycaption[1]{
+  % \figcaption{\emph{#1}}
+  % \figcaption[labelfont=bf]{#1} % Probar para lograr esto
+  \figcaption{#1} 
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Plotting Settings %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepgfplotslibrary{colorbrewer}
-\pgfplotsset{width=8cm,compat=1.9}
+\pgfplotsset{width=7cm,compat=1.18}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title & Author %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -64,9 +90,13 @@
 
 \begin{document}
 
+
 \maketitle
-Hola
+
+\include{lib/structure}
+
 \input{lib/chapter1.tex}
+\input{lib/graphicFunctions.tex}
 \printbibliography
 
 \end{document}
